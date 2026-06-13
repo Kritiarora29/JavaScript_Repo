@@ -51,3 +51,22 @@ console.log(schoolName.split(" ").join("-")); // "Greenwood-High-School"
 // splits the string into an array of substrings, reverses the order of the substrings and joins them back together with the specified separator
 console.log(schoolName.split("").reverse().join("")); // "School High Greenwood"
 
+
+/**************************************** METHODS OF STRING ****************************************/
+
+// anchor - used to create <a name="hello">Hello, world</a> in HTML
+const contentString = "Hello, world";
+//document.body.innerHTML = contentString.anchor("hello");
+// same for big, blink, bold
+
+// at - find value at index given
+const sentence = "The quick brown fox jumps over the lazy dog.";
+console.log(sentence.at(11))
+// at() supports negative indexing while charAt() doesn't
+// for out-of-bounds results at() gives undefined and charAt() gives ""
+// at() - Strings, Arrays, and TypedArrays and charAt() - Strings only
+
+// concat - to add strings
+const str2 = "User"
+console.log(str1.concat(" ", str2));
+
